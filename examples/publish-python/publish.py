@@ -2,7 +2,7 @@
 
 import requests
 
-resp = requests.get("https://ntfy.sh/mytopic/trigger",
+resp = requests.post("https://ntfy.sh/mytopic/trigger",
     data="Backup successful 😀".encode(encoding='utf-8'),
     headers={
         "Priority": "high",
